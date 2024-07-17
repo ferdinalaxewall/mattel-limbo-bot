@@ -1,4 +1,4 @@
-# Mattel Limbo
+# Mattel Limbo AI Prompting
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://github.com/ferdinalaxewall/mattel-limbo-bot/blob/master/img/banner2-matel-limbo.jpg" alt="Nest Logo" /></a>
 </p>
