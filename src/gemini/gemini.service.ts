@@ -1,15 +1,23 @@
+import { GoogleGenerativeAI } from '@google/generative-ai';
 import { Injectable } from '@nestjs/common';
-import axios from 'axios';
 
 @Injectable()
 export class GeminiService {
-//   async sendToGemini(prompt: string): Promise<string> {
-//     // Logic untuk mengirim prompt ke Gemini API dan proses respons
-//     try {
-//       const response = await axios.post('https://example.com/gemini-api', { prompt });
-//       return response.data;
-//     } catch (error) {
-//       throw new Error(`Error calling Gemini API: ${error.message}`);
-//     }
-//   }
+    private genAI: GoogleGenerativeAI;
+
+    constructor() {
+        this.genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+    }
+
+    async sendToGemini(prompt: string): Promise<string> {
+        // Choose a model that's appropriate for your use case.
+        const model = this.genAI.getGenerativeModel({ model: "gemini-1.5-flash"});
+
+        const result = await model.generateContent(prompt);
+        const response = result.response;
+        const text = response.text();
+        console.log(text);
+
+        return text;
+    }
 }
