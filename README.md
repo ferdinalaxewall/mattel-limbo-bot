@@ -1,6 +1,6 @@
 # Mattel Limbo
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://github.com/ferdinalaxewall/mattel-limbo-bot/blob/master/img/banner-matel-limbo.jpg" alt="Nest Logo" /></a>
+  <a href="http://nestjs.com/" target="blank"><img src="https://github.com/ferdinalaxewall/mattel-limbo-bot/blob/master/img/banner2-matel-limbo.jpg" alt="Nest Logo" /></a>
 </p>
 
 **Mattel Limbo** is a Casual AI Prompter designed to generate casual results based on your needs. Our innovative solution leverages cutting-edge technology to provide seamless and intuitive user experiences.
